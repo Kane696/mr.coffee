@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pour plus d'informations vous pouvez nous contacter."> 
+    <!-- css -->
+    <link rel="stylesheet" href="/css/application.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Contact | Mr Coffee</title>
+</head>
+<body>
+    <header id="top">
+        <a href="index.html" class="logo"><img src="./images/full_logo_white.png" alt="logo"></a>
+    <!-- menu burger -->
+        <input type="checkbox" id="checkbox" class="burger__checkbox">
+            <label for="checkbox" class="burger__button">
+                <span class="burger__button-line"></span>
+                <span class="burger__button-line"></span>
+                <span class="burger__button-line"></span>
+            </label>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a class="menu__link" href="index.html">Accueil</a></li>
+                        <li><a class="menu__link" href="about.html">Qui sommes-nous?</a></li>
+                        <li><a class="menu__link current__page" href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header> 
+
+    <div class="container">
+        <div class="mr__coffee">
+            <img src="./images/logo_mrcoffee.png" alt="logo">
+        </div>
+    <!-- section formulaire -->
+        <section class="formulaire">
+            <form  id="myForm">
+                <h1>Dites nout tout !</h1>
+                <label for="lastName">Nom <span>*</span></label>
+                <input type="text" name="lastName" id="lastName" required>
+                <span id="missPrenom"></span><br>
+                <label for="firstName">Prénom <span>*</span></label>
+                <input type="text" name="firstName" id="firstName" required>
+                <label for="email">E-mail <span>*</span></label>
+                <input type="email" name="email" id="email" required>
+                <label for="tel">Téléphone <span>*</span></label>
+                <input type="tel" name="tel" id="tel" required>
+                <label for="message">Message <span>*</span></label>
+                <textarea name="message" id="message" placeholder="Tapez votre message ici" required></textarea>
+                <button type="submit" class="btn" id="btn">ENVOYER</button>
+            </form>
+            <div id="modal-overlay">
+                <div id="modal">
+                    <img src="./images/logo_dark.png" alt="logo">
+                        <h3>MERCI</h3>
+                        <h4>Votre message a bien été envoyé !</h4>
+                        <p>Nous essaierons d'y répondre au mieux dans les plus brefs délais. A bientôt chez Mr.Coffee</p>
+                    <button id="btn__close-modal" class="btn">FERMER</button>
+                </div>
+                <div id="newModal"></div>
+            </div>
+            
+        </section>
+    <!-- section contact -->
+        <section class="contact reveal">
+            <h2 class="reveal-4"> On vous attend !</h2>
+                <div class="adresse">
+                    <p>Mr.Coffee</p>
+                    <p>15 rue Jules Guesde</p>
+                    <p>75014 Paris</p>
+                </div>
+                <div>
+                    <p>Tel: +33 9 46 25 78 45</p>
+                    <p>Mail: contact@mr-coffee.com</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10504.498903079626!2d2.312015342226958!3d48.8367595685645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b5590a00b1%3A0x2711ee015c1c2b2e!2s15%20Rue%20Jules%20Guesde%2C%2075014%20Paris!5e0!3m2!1sfr!2sfr!4v1611346284224!5m2!1sfr!2sfr" width="600" height="450"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </div>
+    <footer>
+        <div>
+            <a href="#top"><img class="footer__logo" src="./images/logo_blanc.png" alt="logo"></a>
+        </div>
+        <div class="social">
+            <p>Suivez-nous sur les réseaux sociaux !</p>
+                <div class="social__icons">
+                    <div class="linkedin__logo">
+                        <a href="https://fr.linkedin.com/"><img src="./images/logo_linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div class="twitter__logo">
+                        <a href="https://twitter.com/?lang=fr"><img src="./images/logo_twitter.png" alt="twitter"></a>
+                    </div>
+                    <div class="facebook__logo">
+                        <a href="https://fr-fr.facebook.com/"><img src="./images/logo_facebook.png" alt="facebook"></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/reveal.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Besoin d'une pause café et d'un lieu de partage ? Venez nous rejoindre chez Mr.Coffee, nous vous attendons avec impatience!"> 
+    <!-- css -->
+    <link rel="stylesheet" href="/css/application.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Accueil | Mr.Coffee</title>
+</head>
+<body>
+    <header id="top">
+        <a href="index.html" class="logo"><img src="./images/full_logo_white.png" alt="logo"></a>
+    <!-- menu burger -->
+        <input type="checkbox" id="checkbox" class="burger__checkbox">
+            <label for="checkbox" class="burger__button">
+                <span class="burger__button-line"></span>
+                <span class="burger__button-line"></span>
+                <span class="burger__button-line"></span>
+            </label>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a class="menu__link current__page"  href="index.html">Accueil</a></li>
+                        <li><a class="menu__link" href="about.html">Qui sommes-nous?</a></li>
+                        <li><a class="menu__link" href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header> 
+    
+    <div class="container">
+        <div class="mr__coffee">
+            <img src="./images/logo_mrcoffee.png" alt="logo">
+        </div>
+    <!-- banner -->
+        <section class="banner">
+            <div class="img__banner">
+                <h1>DÉCOUVREZ NOTRE CAFÉ PHILO</h1>
+            </div>
+        </section>
+    <!-- three things -->
+        <section class="three__things reveal">
+            <h2 class="reveal-2">Chez Mr.Coffee, <br/> nous aimons trois choses</h2>
+        <div class="three__things-element reveal-3">
+            <div class="element">
+                <img src="./images/icon_cafe.png" alt="cafe">
+                <h3>Le bon café</h3>
+                    <p>Nos priorités : la qualité et le goût.Tous nos 
+                        cafés sont soigneusements séléctionnés en accord 
+                        avec nos valeurs de respect de la nature et des hommes.
+                    </p>
+            </div>
+            <div class="element">
+                <img src="./images/icon_gens.png" alt="gens">
+                <h3>Les gens</h3>
+                    <p>Nous sommes de ceux qui pensent
+                        qu’ensemble, nous allons plus loin.
+                        C’est pourquoi chez Mr.Coffee, notre
+                        mission est de rassembler les gens en
+                        leur offrant un lieu de liberté et de
+                        partages.</p>
+            </div>
+            <div class="element">
+                <img src="./images/icon_histoires.png" alt="cafe">
+                <h3>Les histoires</h3>
+                    <p>Chez Mr.Coffee, que vous soyez
+                        poête, fantasque ou philosophe, nous
+                        vous offrons un lieu pour parler de
+                        vos histoires, ou pour les écrire.</p>
+            </div>
+        </div>
+        <a class="btn" href="./about.html">En savoir plus</a>
+    </section>
+    <!-- programme -->
+    <section class="programme reveal">
+        <h2 class="reveal-2">Découvrez notre programme</h2>
+            <div class="programme__icon">
+                <img src="./images/icon_open.png" alt="open">
+                <p>Votre café vous accueille 7j/7 :</p>
+            </div>
+            <div class="programme__info">
+                <div class="tuesday">
+                    <p><span>Tous les mardis, <br/> retrouvez</span> les cafés poésies : </p>
+                    <p>Venez écouter ou lire vos plus beaux <br> poèmes : Mr.Coffee offre une <br> consommation à tous les courageux !</p>
+                </div>
+                <div class="thursday"> 
+                    <p><span>Tous les jeudis, <br/>retrouvez</span> les cafés philo et débat :</p>
+                    <p>Autour d’un thème philosophique ou de <br> société, venez débattre entre experts ou <br> simple curieux.</p>
+                </div>
+            </div>
+                <p id="text__atelier">Sans oublier nos ateliers d’écritures et évènements excéptionnels !</p>
+                <p id="infos__pratiques">Rendez-vous sur notre page <a href="./contact.html">Contact</a> pour retrouver <br> toutes les infos pratiques</p>
+    </section>
+    </div>
+    <footer>
+        <div>
+            <a href="#top"><img class="footer__logo" src="./images/logo_blanc.png" alt="logo"></a>
+        </div>
+        <div class="social">
+            <p>Suivez-nous sur les réseaux sociaux !</p>
+                <div class="social__icons">
+                    <div class="linkedin__logo">
+                        <a href="https://fr.linkedin.com/"><img src="./images/logo_linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div class="twitter__logo">
+                        <a href="https://twitter.com/?lang=fr"><img src="./images/logo_twitter.png" alt="twitter"></a>
+                    </div>
+                    <div class="facebook__logo">
+                        <a href="https://fr-fr.facebook.com/"><img src="./images/logo_facebook.png" alt="facebook"></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script type="text/javascript" src="js/reveal.js"></script>
+</body>
+</html>
